@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Password Login</title>
+    <script>
+        function checkPassword() {
+            
+            var correctPassword = "theophile";
+            var enteredPassword = document.getElementById("password").value;
+            
+            if (enteredPassword === correctPassword) {
+               
+                window.location.href = "https://theophile207.github.io/Bob-Presentation/index.html";
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="login-form">
+        <h2>Password Login</h2>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <input type="button" value="Log In" onclick="checkPassword()">
+    </div>
+</body>
+</html>
